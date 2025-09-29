@@ -10,7 +10,7 @@ import { dateTool } from './tools/dateTimeTool.js'
 export const weatherAgent = new AgentApplicationBuilder().build()
 
 weatherAgent.onConversationUpdate('membersAdded', async (context, state) => {
-  await context.sendActivity(`Hello and Welcome! I'm here to help with all your weather forecast needs!`)
+  await context.sendActivity('Hello and Welcome! I\'m here to help with all your weather forecast needs!')
 })
 
 interface WeatherForecastAgentResponse {
